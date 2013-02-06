@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SnapShots</string>
+    <string name="button_predict_bac">Predict B.A.C. Curve</string>
+    <string name="button_bac_reading">Take B.A.C. Reading</string>
+    <string name="oz_label">oz.</string>
+    <string name="percent_label">%</string>
+    <string name="hunger_1">1</string>
+    <string name="hunger_2">2</string>
+    <string name="hunger_3">3</string>
+    <string name="hunger_4">4</string>
+    <string name="hunger_5">5</string>
+    <string name="hunger_level">Hunger Level</string>
+    <string name="Select_Profile">Profile Selector</string>
+    <string name="Use_Profile">Use Profile</string>
+    <string name="Save_Profile">Save Profile</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="User_Name">Selected Username</string>
+    <string name="Smoker">Smoker?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Gender">Gender?</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Drinking_Frequency">Drinking Frequency</string>
+    <string name="Weight">Weight (lbs):</string>
+    <string name="Delete_Profile">Delete Profile</string>
+</resources>

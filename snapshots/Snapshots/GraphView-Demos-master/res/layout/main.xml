@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/tabs"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="0.51"
+        class="sensing.snapShots.MenuTabFragment"
+        tools:layout="@android:layout/simple_list_item_activated_1" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="?android:attr/detailsElementBackground" />
+
+</LinearLayout>

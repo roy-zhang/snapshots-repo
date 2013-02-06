@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.31"
+            android:gravity="bottom|left"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/hunger_1"
+                android:layout_width="67dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/custom_button"
+                android:onClick="hungerChange"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/hunger_1"
+                android:textColor="@color/button_text_color" />
+
+            <Button
+                android:id="@+id/hunger_2"
+                android:layout_width="67dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/custom_button"
+                android:onClick="hungerChange"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/hunger_2"
+                android:textColor="@color/button_text_color" />
+
+            <Button
+                android:id="@+id/hunger_3"
+                android:layout_width="67dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/custom_button"
+                android:onClick="hungerChange"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/hunger_3"
+                android:textColor="@color/button_text_color" />
+
+            <Button
+                android:id="@+id/hunger_4"
+                android:layout_width="67dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/custom_button"
+                android:onClick="hungerChange"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/hunger_4"
+                android:textColor="@color/button_text_color" />
+
+            <Button
+                android:id="@+id/hunger_5"
+                android:layout_width="67dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/custom_button"
+                android:onClick="hungerChange"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/hunger_5"
+                android:textColor="@color/button_text_color" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/hunger_level"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/graph1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0.22"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/shot_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_shot"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/beer_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_beer"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/pint_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_pint"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/mix_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_mix"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/wine_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_wine"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button" >
+
+                <Button
+                    android:id="@+id/saveSearchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_button"
+                    android:onClick="drinkSelect" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_shot"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_reading"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/custom_button"
+            android:shadowColor="@color/button_text_shadow_color"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"
+            android:text="@string/button_bac_reading"
+            android:textColor="@color/button_text_color" />
+
+        <TableRow
+            android:id="@+id/table1Row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/ounces_edittext"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:background="@drawable/textfield"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/ozlabel"
+                android:layout_width="67dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_button"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/oz_label"
+                android:textColor="@color/button_text_color" />
+
+            <EditText
+                android:id="@+id/percent_text"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:background="@drawable/textfield"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/percentlabel"
+                android:layout_width="67dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_button"
+                android:shadowColor="@color/button_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="0.01"
+                android:text="@string/percent_label"
+                android:textColor="@color/button_text_color" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/button_predict"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="addDrinkOnClick"
+            android:shadowColor="@color/button_text_shadow_color"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"
+            android:text="@string/button_predict_bac"
+            android:textColor="@color/button_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    		
+	<FrameLayout
+	    android:id="@+id/graph"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="?android:attr/detailsElementBackground" />
+    	    
+    	    <TableLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="35dp"
+    	        android:layout_marginBottom="5dp"
+    	        android:layout_weight="3"
+    	         >
+
+		    <TableRow
+		        android:id="@+id/hungerTableRow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+		         <Button
+		             android:id="@+id/hunger_1"
+		             android:layout_width="67dp"
+		             android:layout_height="35dp"
+		             android:layout_marginBottom="7dp"
+		             android:layout_marginRight="1dp"
+		             android:layout_weight="1"
+		             android:background="@drawable/custom_button"
+		             android:onClick="hungerChange"
+		             android:shadowColor="@color/button_text_shadow_color"
+		             android:shadowDx="2"
+		             android:shadowDy="2"
+		             android:shadowRadius="0.01"
+		             android:text="@string/hunger_1"
+		             android:textColor="@color/button_text_color" />
+		         
+		          <Button
+		     android:id="@+id/hunger_2"
+		     android:layout_width="67dp"
+		     android:layout_height="35dp"
+		     android:layout_marginBottom="7dp"
+		     android:layout_marginRight="1dp"
+		     android:background="@drawable/custom_button"
+		     android:shadowColor="@color/button_text_shadow_color"
+		     android:shadowDx="2"
+		     android:shadowDy="2"
+		     android:shadowRadius="0.01"
+		     android:text="@string/hunger_2"
+			 android:onClick="hungerChange"
+		     android:textColor="@color/button_text_color" />
+
+		         </TableRow>
+		         
+		    </TableLayout>
+    	    
+
+</LinearLayout>

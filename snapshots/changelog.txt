@@ -1,0 +1,12 @@
+unzipped the other project and imported into eclipse
+
+changed xml text labels
+
+changed target api to 17 (ADT 21) min api to 9
+changed eclipse compile version to 1.6 for graphview and snapshots
+
+changed package names from com.snapshots.something
+to snapshots and snapshots.model
+
+started sharedPreferenceManager for storage
+
